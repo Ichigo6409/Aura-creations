@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Creaciones - Misión y Visión</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+
+    <!-- SECCION: ENCABEZADO / MENU -->
+    <nav class="aura-header">
+        <div class="nav-wrapper container">
+            <a href="inicio.html" class="brand-logo">
+                                <span class="aura-logo"><img src="C:\Users\josea\Documents\programacion web\Proyecto\imagenes\logo.jpg" alt="Logo Aura Creaciones" style="width: 45px; height: 45px;"></span>
+            </a>
+            <a href="#" data-target="aura-mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="historia.html">Nuestra Historia</a></li>
+                <li><a href="mision-vision.html">Misión y Visión</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="aura-mobile-nav">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="historia.html">Nuestra Historia</a></li>
+        <li><a href="mision-vision.html">Misión y Visión</a></li>
+    </ul>
+
+    <!-- SECCION: TITULO DE LA PAGINA -->
+    <section class="aura-titulo-pagina">
+        <h1>Sobre Nosotros</h1>
+        <p>Conoce quiénes somos y hacia dónde vamos</p>
+    </section>
+
+    <!-- SECCION: MISION -->
+    <section class="aura-bloque-mvv container" id="mision" style="max-width: 800px;">
+        <h2>Misión</h2>
+        <p>En Aura Creaciones nos dedicamos a crear productos personalizados de sublimación DTF y
+        cortes para toppers de pastel, ofreciendo diseños de calidad a un precio justo para
+        nuestros clientes de Celaya y sus alrededores.</p>
+    </section>
+
+    <!-- SECCION: VISION -->
+    <section class="aura-bloque-mvv container" id="vision" style="max-width: 800px;">
+        <h2>Visión</h2>
+        <p>Ser el taller de sublimación y corte personalizado más reconocido de Celaya, Guanajuato,
+        llevando nuestros productos a otras ciudades y creciendo junto con la creatividad de
+        nuestros clientes.</p>
+    </section>
+
+    <!-- SECCION: VALORES -->
+    <section class="aura-bloque-mvv container" id="valores" style="max-width: 800px; padding-bottom: 40px;">
+        <h2>Valores</h2>
+        <div class="row" style="margin-top: 10px;">
+            <div class="col s6 m3">
+                <div class="aura-valor-card">
+                    <h3 style="font-size: 17px;">Creatividad</h3>
+                    <p style="margin: 0;">Cada diseño lo hacemos pensando en lo que el cliente se imagina</p>
+                </div>
+            </div>
+            <div class="col s6 m3">
+                <div class="aura-valor-card">
+                    <h3 style="font-size: 17px;">Calidad</h3>
+                    <p style="margin: 0;">Cuidamos que cada corte y cada sublimado salga bien hecho</p>
+                </div>
+            </div>
+            <div class="col s6 m3">
+                <div class="aura-valor-card">
+                    <h3 style="font-size: 17px;">Puntualidad</h3>
+                    <p style="margin: 0;">Entregamos los pedidos en el tiempo que se acuerda con el cliente</p>
+                </div>
+            </div>
+            <div class="col s6 m3">
+                <div class="aura-valor-card">
+                    <h3 style="font-size: 17px;">Cercania con el cliente</h3>
+                    <p style="margin: 0;">Siempre estamos disponibles por whatsapp para resolver dudas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION: PIE DE PAGINA CON CONTACTO -->
+    <footer class="aura-footer" id="contacto">
+        <div class="container">
+            <h2 style="margin-bottom: 20px;">Contáctanos</h2>
+            <form style="max-width: 350px; margin: 0 auto 25px auto; display: flex; flex-direction: column;">
+                <input type="text" placeholder="Tu nombre">
+                <input type="email" placeholder="Tu correo">
+                <textarea class="materialize-textarea" placeholder="Escribe tu mensaje" style="min-height: 90px;"></textarea>
+                <button type="submit" class="btn aura-btn-hero" style="margin-top: 5px;">Enviar</button>
+            </form>
+
+            <div class="footer-info">
+                <p>Aura Creaciones - Celaya, Guanajuato</p>
+                <p>Whatsapp: 461 000 0000</p>
+                <p class="aviso">Aviso de privacidad: tus datos solo se usan para contestar tu mensaje, no los compartimos con nadie</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(elems);
+        });
+    </script>
+</body>
+</html>

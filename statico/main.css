@@ -1,0 +1,257 @@
+/* PARTE 0: cosas generales de toda la pagina
+   esto le pega a TODOS los elementos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #fdfaf6;
+}
+
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+}
+
+/* PARTE 1: HEADER / MENU DE NAVEGACION
+   esto le pega a la etiqueta <header class="header-principal">
+   que esta arriba de inicio.html y mision-vision.html*/
+.header-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6b3fa0;
+    padding: 15px 30px;
+}
+
+.logo-Box {
+    display: flex;
+    align-items: center;
+}
+
+.logo-placeholder {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    color: #6b3fa0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.nav_menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav_menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav_menu a:hover {
+    color: #f2d492;
+}
+
+/* PARTE 2: SECCION HERO
+   esto le pega a <section class="hero-section"> de inicio.html*/
+.hero-section {
+    background-color: #a97bd1;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-section h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn-hero {
+    background-color: #f2d492;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*PARTE 3: CATALOGO DE PRODUCTOS
+   esto le pega a <section class="catalogo"> de inicio.html,*/
+.catalogo {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.catalogo h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.catalogo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 220px;
+}
+
+.img-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: #e0d4f0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* PARTE 4: COMO TRABAJAMOS (los 3 pasos)
+   esto le pega a <section class="proceso"> de inicio.html*/
+.proceso {
+    background-color: #f2ebf9;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.pasos-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.paso {
+    max-width: 220px;
+}
+
+.numero-paso {
+    display: inline-block;
+    background-color: #6b3fa0;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* PARTE 5: TITULO DE PAGINA (lo usa mision-vision.html)
+   esto le pega a <section class="titulo-pagina">*/
+.titulo-pagina {
+    text-align: center;
+    padding: 40px 20px 10px 20px;
+}
+
+/* PARTE 6: MISION, VISION Y VALORES
+   esto le pega a los 3 bloques de mision-vision.html*/
+.bloque-mvv {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.bloque-mvv h2 {
+    color: #6b3fa0;
+    margin-bottom: 10px;
+}
+
+.valores-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.valor-card {
+    background-color: #f2ebf9;
+    padding: 15px;
+    border-radius: 8px;
+    width: 180px;
+}
+
+/* PARTE 7: PIE DE PAGINA / CONTACTO
+   esto le pega a <footer class="pie-pagina"> que se repite
+   en inicio.html y mision-vision.html*/
+.pie-pagina {
+    background-color: #3d2352;
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.pie-pagina h2 {
+    margin-bottom: 20px;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 0 auto 25px auto;
+    gap: 10px;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-contacto button {
+    background-color: #f2d492;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer-info p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.aviso {
+    font-size: 12px;
+    color: #cbbde0;
+    margin-top: 10px;
+}
+
+/* PARTE 8: RESPONSIVE*/
+@media (max-width: 600px) {
+    .header-principal {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav_menu ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .hero-section h1 {
+        font-size: 30px;
+    }
+}

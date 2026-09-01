@@ -1,0 +1,171 @@
+:root {
+    --aura-purple: #6b3fa0;
+    --aura-purple-light: #a97bd1;
+    --aura-purple-dark: #3d2352;
+    --aura-gold: #f2d492;
+    --aura-bg-light: #f2ebf9;
+    --aura-bg: #fdfaf6;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--aura-bg);
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* PARTE 1: header / menu */
+.aura-header {
+    background-color: var(--aura-purple) !important;
+}
+
+.aura-logo {
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    color: var(--aura-purple);
+    font-weight: bold;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.aura-header a,
+.sidenav li a {
+    color: #fff;
+}
+
+.aura-header ul a:hover {
+    color: var(--aura-gold);
+    background-color: transparent;
+}
+
+.sidenav li a {
+    color: var(--aura-purple);
+}
+
+/* PARTE 2: hero */
+.aura-hero {
+    background-color: var(--aura-purple-light);
+    color: #fff;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.aura-btn-hero {
+    background-color: var(--aura-gold) !important;
+    color: #333 !important;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+.aura-btn-hero:hover {
+    background-color: #eec877 !important;
+}
+
+/* PARTE 3: catalogo de productos */
+.aura-catalogo {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.aura-img-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: #e0d4f0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.producto-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: none;
+    padding: 20px;
+}
+
+/* PARTE 4: como trabajamos */
+.aura-proceso {
+    background-color: var(--aura-bg-light);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.aura-numero-paso {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--aura-purple);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* PARTE 5: titulo de pagina generico */
+.aura-titulo-pagina {
+    text-align: center;
+    padding: 50px 20px 15px 20px;
+}
+
+/* PARTE 6: mision vision y valores */
+.aura-bloque-mvv h2 {
+    color: var(--aura-purple);
+    margin-bottom: 10px;
+}
+
+.aura-valor-card {
+    background-color: var(--aura-bg-light);
+    border-radius: 8px;
+    padding: 18px;
+    box-shadow: none;
+}
+
+/* PARTE 6.5: historia / linea del tiempo */
+.aura-etapa {
+    border-left: 4px solid var(--aura-purple);
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.aura-etapa h2 {
+    color: var(--aura-purple);
+    font-size: 20px;
+}
+
+/* PARTE 7: pie de pagina / contacto */
+.aura-footer {
+    background-color: var(--aura-purple-dark);
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.aura-footer .aviso {
+    font-size: 12px;
+    color: #cbbde0;
+    margin-top: 10px;
+}
+
+.aura-footer .footer-info p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.aura-footer input,
+.aura-footer textarea {
+    color: #333 !important;
+    background-color: #fff;
+    border-radius: 5px !important;
+    padding: 8px 10px !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin-bottom: 12px !important;
+}
