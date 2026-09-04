@@ -4,36 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aura Creaciones - Inicio</title>
-
-    <!-- fuente de iconos que pide materialize -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- materialize desde cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- ajustes de color, esto se usa en las 3 paginas -->
     <link rel="stylesheet" href="custom.css">
 </head>
 <body>
-
-    <!-- SECCION: ENCABEZADO / MENU DE NAVEGACION (componente nav de materialize) -->
+    <!-- SECCION: ENCABEZADO / MENU (con perfil y cerrar sesion porque aqui ya hay sesion iniciada) -->
     <nav class="aura-header">
         <div class="nav-wrapper container">
             <a href="inicio.html" class="brand-logo">
-                <span class="aura-logo"><img src="C:\Users\josea\Documents\programacion web\Proyecto\imagenes\logo.jpg" alt="Logo Aura Creaciones" style="width: 45px; height: 45px;"></span>
+                <span class="aura-logo"><img src="imagenes/logo.jpg" alt="Logo Aura Creaciones"></span>
             </a>
             <a href="#" data-target="aura-mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
                 <li><a href="historia.html">Nuestra Historia</a></li>
                 <li><a href="mision-vision.html">Misión y Visión</a></li>
+                <li><a href="perfil.html"><img class="aura-avatar" src="imagenes/perfil_usuario.png" alt="Foto de perfil"></a></li>
+                <li><a href="iniciar-sesion.html">Cerrar sesión</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- menu que sale de lado en celular -->
     <ul class="sidenav" id="aura-mobile-nav">
         <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
         <li><a href="historia.html">Nuestra Historia</a></li>
         <li><a href="mision-vision.html">Misión y Visión</a></li>
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="perfil.html" class="d-flex-fix">
+                <img class="aura-avatar" src="imagenes/perfil_usuario.png" alt="Foto de perfil" style="margin-right:10px;">
+                Maria perez
+            </a>
+        </li>
+        <li><a href="iniciar-sesion.html">Cerrar sesión</a></li>
     </ul>
 
     <!-- SECCION: HERO -->
@@ -41,48 +47,26 @@
         <div class="container">
             <h1 style="font-size: 42px; font-weight: bold;">Aura Creaciones</h1>
             <p style="font-size: 18px; margin-bottom: 25px;">Sublimación DTF y cortes para toppers de pastel, hechos en Celaya, Guanajuato</p>
-            <a href="#catalogo" class="btn-large aura-btn-hero">Ver catalogo</a>
+            <a href="catalogo.html" class="btn-large aura-btn-hero">Ver catalogo</a>
         </div>
     </section>
 
-    <!-- SECCION: CATALOGO DE PRODUCTOS (grid de materialize) -->
+    <!-- SECCION: CATALOGO DE PRODUCTOS (carrusel de materialize con 10 espacios de imagenes) -->
     <section class="aura-catalogo" id="catalogo">
         <div class="container">
             <h2 style="margin-bottom: 30px; font-size: 28px;">Nuestros productos</h2>
-            <div class="row">
-
-                <div class="col s12 m6 l3">
-                    <div class="card producto-card">
-                        <div class="aura-img-placeholder"></div>
-                        <h3 style="font-size: 20px;">Toppers para pastel</h3>
-                        <p>Cortes personalizados para decorar tu pastel</p>
-                    </div>
-                </div>
-
-                <div class="col s12 m6 l3">
-                    <div class="card producto-card">
-                        <div class="aura-img-placeholder"></div>
-                        <h3 style="font-size: 20px;">Playeras</h3>
-                        <p>Playeras sublimadas con el diseño que tu quieras</p>
-                    </div>
-                </div>
-
-                <div class="col s12 m6 l3">
-                    <div class="card producto-card">
-                        <div class="aura-img-placeholder"></div>
-                        <h3 style="font-size: 20px;">Termos</h3>
-                        <p>Termos personalizados para regalo o uso diario</p>
-                    </div>
-                </div>
-
-                <div class="col s12 m6 l3">
-                    <div class="card producto-card">
-                        <div class="aura-img-placeholder"></div>
-                        <h3 style="font-size: 20px;">Tazas</h3>
-                        <p>Tazas sublimadas con fotos, frases o logos</p>
-                    </div>
-                </div>
-
+            <!-- aqui van las 10 imagenes de productos, solo cambia la ruta del src -->
+            <div class="carousel aura-carousel-inicio">
+                    <a class="carousel-item" href="#!"><img src="imagenes/caketupper.jpg" alt="Producto 1"></a>
+                    <a class="carousel-item" href="#!"><img src="imagenes/sublimacion-textil.jpg" alt="Producto 2"></a>
+                    <a class="carousel-item" href="#!"><img src="imagenes/sublimacion.jpg" alt="Producto 3"></a>
+                    <a class="carousel-item" href="#!"><img src="imagenes/tazas/cumpleanos/tc1.jpg" alt="Producto 4"></a>
+                    <a class="carousel-item" href="#!"><img src="imagenes/tazas/dibujos-animados/ta1.jpg" alt="Producto 5"></a>
+                    <a class="carousel-item" href="#!"><img src="imagenes/tazas/halloween/th1.jpg" alt="Producto 6"></a>
+                    <a class="carousel-item" href="#!"><img src="imagenes/tazas/dia-independencia/ti1.jpg" alt="Producto 7"></a>
+                    <a class="carousel-item" href="#!"><img src="imagenes/tazas/navidad/tn1.jpg" alt="Producto 8"></a>
+                    <a class="carousel-item" href="#!"><img src="imagenes/tazas/cumpleanos/tc3.jpg" alt="Producto 9"></a>
+                    <a class="carousel-item" href="#!"><img src="imagenes/tazas/dibujos-animados/ta3.jpg" alt="Producto 10"></a>
             </div>
         </div>
     </section>
@@ -111,14 +95,13 @@
         </div>
     </section>
 
-    <!-- SECCION: PIE DE PAGINA CON CONTACTO -->
+    <!-- SECCION: PIE DE PAGINA CON CONTACTO (igual en todas las paginas) -->
     <footer class="aura-footer" id="contacto">
         <div class="container">
             <h2 style="margin-bottom: 20px;">Contáctanos</h2>
-            <!-- formulario de contacto, todavia le falta conectarlo a algo real -->
             <form style="max-width: 350px; margin: 0 auto 25px auto; display: flex; flex-direction: column;">
                 <input type="text" placeholder="Tu nombre">
-                <input type="email" placeholder="Tu correo">
+                <input type="text" placeholder="Tu correo">
                 <textarea class="materialize-textarea" placeholder="Escribe tu mensaje" style="min-height: 90px;"></textarea>
                 <button type="submit" class="btn aura-btn-hero" style="margin-top: 5px;">Enviar</button>
             </form>
@@ -130,15 +113,17 @@
             </div>
         </div>
     </footer>
-
-    <!-- materialize necesita este js para que funcionen los menus -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        // esto activa el menu de celular, sin esto el sidenav no abre
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.sidenav');
             M.Sidenav.init(elems);
+            
+            // esto activa el carrusel de la seccion de productos
+            var carruseles = document.querySelectorAll('.carousel');
+            M.Carousel.init(carruseles, { fullWidth: false, indicators: true });
         });
+        
     </script>
 </body>
 </html>

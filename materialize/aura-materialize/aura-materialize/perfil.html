@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aura Creaciones - Misión y Visión</title>
-
+    <title>Aura Creaciones - Mi Perfil</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="custom.css">
 </head>
 <body>
-
-    <!-- SECCION: ENCABEZADO / MENU -->
+    <!-- SECCION: ENCABEZADO / MENU (con perfil y cerrar sesion porque aqui ya hay sesion iniciada) -->
     <nav class="aura-header">
         <div class="nav-wrapper container">
             <a href="inicio.html" class="brand-logo">
@@ -20,72 +18,53 @@
             <a href="#" data-target="aura-mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
                 <li><a href="historia.html">Nuestra Historia</a></li>
                 <li><a href="mision-vision.html">Misión y Visión</a></li>
+                <li><a href="perfil.html"><img class="aura-avatar" src="imagenes/perfil_usuario.png" alt="Foto de perfil"></a></li>
+                <li><a href="iniciar-sesion.html">Cerrar sesión</a></li>
             </ul>
         </div>
     </nav>
 
     <ul class="sidenav" id="aura-mobile-nav">
         <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
         <li><a href="historia.html">Nuestra Historia</a></li>
         <li><a href="mision-vision.html">Misión y Visión</a></li>
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="perfil.html" class="d-flex-fix">
+                <img class="aura-avatar" src="imagenes/perfil_usuario.png" alt="Foto de perfil" style="margin-right:10px;">
+                Maria perez
+            </a>
+        </li>
+        <li><a href="iniciar-sesion.html">Cerrar sesión</a></li>
     </ul>
 
-    <!-- SECCION: TITULO DE LA PAGINA -->
-    <section class="aura-titulo-pagina">
-        <h1>Sobre Nosotros</h1>
-        <p>Conoce quiénes somos y hacia dónde vamos</p>
-    </section>
+    <!-- SECCION: FOTO DE PERFIL Y DATOS DEL USUARIO -->
+    <section class="aura-auth-section">
+        <div class="aura-auth-card" style="max-width: 460px;">
+            <!-- aqui va la foto de perfil del usuario, solo cambia el src -->
+            <img class="aura-perfil-foto" src="imagenes/perfil_usuario.png" alt="Foto de perfil">
+            <h1>Mi Perfil</h1>
+            <form>
+                <label>Nombre completo</label>
+                <input type="text" placeholder="Tu nombre completo">
 
-    <!-- SECCION: MISION -->
-    <section class="aura-bloque-mvv container" id="mision" style="max-width: 800px;">
-        <h2>Misión</h2>
-        <p>En Aura Creaciones nos dedicamos a crear productos personalizados de sublimación DTF y
-        cortes para toppers de pastel, ofreciendo diseños de calidad a un precio justo para
-        nuestros clientes de Celaya y sus alrededores.</p>
-    </section>
+                <label style="margin-top: 12px; display: block;">Correo electrónico</label>
+                <input type="text" placeholder="tu@correo.com">
 
-    <!-- SECCION: VISION -->
-    <section class="aura-bloque-mvv container" id="vision" style="max-width: 800px;">
-        <h2>Visión</h2>
-        <p>Ser el taller de sublimación y corte personalizado más reconocido de Celaya, Guanajuato,
-        llevando nuestros productos a otras ciudades y creciendo junto con la creatividad de
-        nuestros clientes.</p>
-    </section>
+                <label style="margin-top: 12px; display: block;">Domicilio de entrega</label>
+                <textarea class="materialize-textarea" placeholder="Calle, número, colonia, ciudad"></textarea>
 
-    <!-- SECCION: VALORES -->
-    <section class="aura-bloque-mvv container" id="valores" style="max-width: 800px; padding-bottom: 40px;">
-        <h2>Valores</h2>
-        <div class="row" style="margin-top: 10px;">
-            <div class="col s6 m3">
-                <div class="aura-valor-card">
-                    <h3 style="font-size: 17px;">Creatividad</h3>
-                    <p style="margin: 0;">Cada diseño lo hacemos pensando en lo que el cliente se imagina</p>
-                </div>
-            </div>
-            <div class="col s6 m3">
-                <div class="aura-valor-card">
-                    <h3 style="font-size: 17px;">Calidad</h3>
-                    <p style="margin: 0;">Cuidamos que cada corte y cada sublimado salga bien hecho</p>
-                </div>
-            </div>
-            <div class="col s6 m3">
-                <div class="aura-valor-card">
-                    <h3 style="font-size: 17px;">Puntualidad</h3>
-                    <p style="margin: 0;">Entregamos los pedidos en el tiempo que se acuerda con el cliente</p>
-                </div>
-            </div>
-            <div class="col s6 m3">
-                <div class="aura-valor-card">
-                    <h3 style="font-size: 17px;">Cercania con el cliente</h3>
-                    <p style="margin: 0;">Siempre estamos disponibles por whatsapp para resolver dudas</p>
-                </div>
-            </div>
+                <button type="submit" class="btn aura-btn-hero" style="width: 100%; margin-top: 15px;">Guardar cambios</button>
+            </form>
+            <a href="iniciar-sesion.html" class="aura-cerrar-sesion-link">Cerrar sesión</a>
         </div>
     </section>
 
-    <!-- SECCION: PIE DE PAGINA CON CONTACTO -->
+    <!-- SECCION: PIE DE PAGINA CON CONTACTO (igual en todas las paginas) -->
     <footer class="aura-footer" id="contacto">
         <div class="container">
             <h2 style="margin-bottom: 20px;">Contáctanos</h2>
@@ -103,13 +82,14 @@
             </div>
         </div>
     </footer>
-
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.sidenav');
             M.Sidenav.init(elems);
+            
         });
+        
     </script>
 </body>
 </html>

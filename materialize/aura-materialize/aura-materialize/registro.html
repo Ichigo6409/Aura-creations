@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Creaciones - Crear cuenta</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <!-- SECCION: ENCABEZADO simple, todavia no hay sesion iniciada -->
+    <nav class="aura-header">
+        <div class="nav-wrapper container">
+            <a href="inicio.html" class="brand-logo">
+                <span class="aura-logo"><img src="imagenes/logo.jpg" alt="Logo Aura Creaciones"></span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- SECCION: FORMULARIO DE REGISTRO -->
+    <section class="aura-auth-section">
+        <div class="aura-auth-card">
+            <h1>Crear cuenta</h1>
+            <form>
+                <label>Nombre completo</label>
+                <input type="text" placeholder="Tu nombre completo">
+
+                <label style="margin-top: 12px; display: block;">Correo electrónico</label>
+                <input type="text" placeholder="tu@correo.com">
+
+                <label style="margin-top: 12px; display: block;">Contraseña</label>
+                <input type="password" placeholder="Crea una contraseña">
+
+                <label style="margin-top: 12px; display: block;">Verificar contraseña</label>
+                <input type="password" placeholder="Repite tu contraseña">
+
+                <label style="margin-top: 12px; display: block;">Domicilio de entrega</label>
+                <textarea class="materialize-textarea" placeholder="Calle, número, colonia, ciudad"></textarea>
+
+                <button type="submit" class="btn aura-btn-hero" style="width: 100%; margin-top: 20px;">Crear cuenta</button>
+            </form>
+            <p class="aura-link-secundario">¿Ya tienes cuenta? <a href="iniciar-sesion.html">Inicia sesión aquí</a></p>
+        </div>
+    </section>
+
+    <!-- SECCION: PIE DE PAGINA CON CONTACTO (igual en todas las paginas) -->
+    <footer class="aura-footer" id="contacto">
+        <div class="container">
+            <h2 style="margin-bottom: 20px;">Contáctanos</h2>
+            <form style="max-width: 350px; margin: 0 auto 25px auto; display: flex; flex-direction: column;">
+                <input type="text" placeholder="Tu nombre">
+                <input type="text" placeholder="Tu correo">
+                <textarea class="materialize-textarea" placeholder="Escribe tu mensaje" style="min-height: 90px;"></textarea>
+                <button type="submit" class="btn aura-btn-hero" style="margin-top: 5px;">Enviar</button>
+            </form>
+
+            <div class="footer-info">
+                <p>Aura Creaciones - Celaya, Guanajuato</p>
+                <p>Whatsapp: 461 000 0000</p>
+                <p class="aviso">Aviso de privacidad: tus datos solo se usan para contestar tu mensaje, no los compartimos con nadie</p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(elems);
+            
+        });
+        
+    </script>
+</body>
+</html>
